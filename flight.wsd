@@ -1,0 +1,33 @@
+@startuml
+title Airline System
+class AirlineCompany {
+    -ID : int
+    -airplane: string
+
+}
+class Airplane {
+    -name: string
+    -model: string
+    +airplaneRun() : string
+    +airplaneRepair() : string
+}
+class Airport {
+    -ID : int
+    -name: string
+}
+class Pilot {
+    -name: string
+    -expreince: string
+}
+class Flight {
+    -ID : int
+    -landingAirport: string
+    -departureAirport: string
+    -landingTime: DateTime
+    -departureTime: DateTime
+    -pilotName: string
+    -coPilotName: string
+    -aircraft: string
+}
+hide empty member
+@enduml
